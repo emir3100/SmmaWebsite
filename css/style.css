@@ -101,12 +101,11 @@
 
 /* Navbar */
 .navbar-root{
-  position: sticky;
-  top: 0;
-  z-index: 1000000;
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
   height: var(--navbar-height);
   background-color: var(--dark);
-  transition: .4s ease-in-out;
 }
 
 .navbar-root.scrolled{
@@ -127,7 +126,7 @@
   overflow: hidden;
 }
 
-.navbar{
+.menu{
   display: flex;
   flex-direction: row;
   padding-left: 0;
@@ -137,17 +136,17 @@
   gap: 2rem;
 }
 
-.navbar li{
+.menu li{
   align-items: center;
   display: flex;
 }
 
-.navbar li a{
+.menu li a{
   color: var(--white);
   text-decoration: none;
 }
 
-.navbar li a.active{
+.menu li a.active{
   font-weight: bold;
 }
 
@@ -156,8 +155,29 @@
 }
 
 @media (max-width: 800px){
-  .navbar{
-    display: none;
+  body.drawer {
+      overflow-y: hidden;
+  }
+
+  .menu {
+      display: none !important;
+  }
+
+  .menu.drawer {
+      position: absolute;
+      display: flex !important;
+      flex-direction: column;
+      text-align: center;
+      background-color: var(--dark);
+      width: 100%;
+      top: 60px;
+      left: 0;
+      height: calc(100vh - 60px);
+      justify-content: center;
+  }
+
+  .menu.drawer li {
+      justify-content: center;
   }
 
   .ham-button {
@@ -195,10 +215,6 @@
         transform: translateY(12px);
     }
   
-  .ham-button:hover .hamburger, .ham-button:hover .hamburger::before, .ham-button:hover .hamburger::after {
-    background-color: var(--primary);
-  }
-  
   .ham-button.is-active .hamburger {
     transform: translateX(-50px);
     visibility: hidden;
@@ -219,7 +235,7 @@
 .hero{
   padding-top: var(--navbar-height);
   background-color: var(--dark);
-  min-height: calc(100vh - var(--navbar-height));
+  min-height: calc(120vh - var(--navbar-height));
   position: relative;
 }
 
@@ -237,7 +253,7 @@
 
 @media (max-width: 600px){
   .hero{
-    min-height: calc(clamp(60vh, 5vw, 100vh) - var(--navbar-height)) !important;
+    min-height: calc(clamp(80vh, 5vw, 100vh) - var(--navbar-height)) !important;
   }
 
   .hero::after{
@@ -247,23 +263,21 @@
 
 @media (max-width: 960px){
   .hero{
-    min-height: calc(clamp(75vh, 5vw, 100vh) - var(--navbar-height));
+    min-height: calc(100vh - var(--navbar-height));
+  }
+}
+
+@media (min-width: 1280px){
+  .hero{
+    min-height: calc(100vh - var(--navbar-height));
   }
 }
 
 @media (min-width: 1280px)
 {
   .hero::after{
-    height: 195px !important;
+    height: 100px !important;
   }
-}
-
-@media (max-width: 1280px)
-{
-    .hero-img {
-      position: absolute;
-      bottom: 0;
-    }
 }
 
 .hero::after{
@@ -271,7 +285,7 @@
   position: absolute;
   left: 0;
   bottom: -1px;
-  height: 50px;
+  height: 90px;
   background-color: #ffffff;
   width: 100%;
 }
