@@ -172,9 +172,109 @@
                 </div>
             </div>
         </section>
+        <section class="how-we-work">
+            <div class="container">
+                <h2 class="section-title">How We Work</h2>
+                <h3 class="section-destitle">Straight To The Point</h3>
+                <div class="grid grid-spacing-xs-2 content-grid">
+                    <div class="grid-item grid-item-xs-12 grid-item-md-6">
+                        <div class="content fade">
+                            <span>01</span>
+                            <h4>Free Discovery Call</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl sit cras eu, feugiat amet ullamcorper sit. Mi massa suspendisse nunc, quisque luctus enim elit. Duis varius enim volutpat quisque libero.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl sit cras eu, feugiat amet ullamcorper sit. Mi massa suspendisse nunc, quisque luctus enim elit. Duis varius enim volutpat quisque libero.</p>
+                        </div>
+                        <div class="content fade">
+                            <span>02</span>
+                            <h4>Finding Best Solution</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl sit cras eu, feugiat amet ullamcorper sit. Mi massa suspendisse nunc, quisque luctus enim elit. Duis varius enim volutpat quisque libero.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl sit cras eu, feugiat amet ullamcorper sit. Mi massa suspendisse nunc, quisque luctus enim elit. Duis varius enim volutpat quisque libero.</p>
+                        </div>
+                        <div class="content fade">
+                            <span>03</span>
+                            <h4>Signing Contract</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl sit cras eu, feugiat amet ullamcorper sit. Mi massa suspendisse nunc, quisque luctus enim elit. Duis varius enim volutpat quisque libero.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl sit cras eu, feugiat amet ullamcorper sit. Mi massa suspendisse nunc, quisque luctus enim elit. Duis varius enim volutpat quisque libero.</p>
+                        </div>
+                        <div class="content fade">
+                            <span>04</span>
+                            <h4>Deliver Results</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl sit cras eu, feugiat amet ullamcorper sit. Mi massa suspendisse nunc, quisque luctus enim elit. Duis varius enim volutpat quisque libero.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl sit cras eu, feugiat amet ullamcorper sit. Mi massa suspendisse nunc, quisque luctus enim elit. Duis varius enim volutpat quisque libero.</p>
+                        </div>
+                    </div>
+                    <div class="grid-item grid-item-xs-12 grid-item-md-6">
+                        <ul class="list">
+                            <li class="list-item" onclick="currentSlide(1)">
+                                <div>
+                                    <span>01</span>
+                                    <p>Free Discovery Call</p>
+                                </div>
+                            </li>
+                            <li class="list-item" onclick="currentSlide(2)">
+                                <div>
+                                    <span>02</span>
+                                    <p>Finding Best Solution</p>
+                                </div>
+                            </li>
+                            <li class="list-item" onclick="currentSlide(3)">
+                                <div>
+                                    <span>03</span>
+                                    <p>Signing Contract</p>
+                                </div>
+                            </li>
+                            <li class="list-item" onclick="currentSlide(4)">
+                                <div>
+                                    <span>04</span>
+                                    <p>Deliver Results</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="lets-talk">
+            <div class="container">
+                <h2 class="section-title">Let’s Talk</h2>
+                <h3 class="section-destitle">Let’s schedule a meeting!</h3>
+
+                <div class="calendly-inline-widget" data-auto-load="false">
+                    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
+                    <script>
+                    Calendly.initInlineWidget({
+                    url: 'https://calendly.com/mojo-customer-success-1/tips-tricks-webinar'
+                    });
+                    </script>
+                </div>
+            </div>
+        </section>
     </main>
 
+    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
     <script>
+        let slideIndex = 1;
+            showSlides(slideIndex);
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                let i;
+                let slides = document.getElementsByClassName("content");
+                let dots = document.getElementsByClassName("list-item");
+                if (n > slides.length) {slideIndex = 1}    
+                if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";  
+                dots[slideIndex-1].className += " active";
+            }
         (() => {
             const hamburger = document.getElementById('ham-btn');
             const drawer = document.getElementById('drawer');
