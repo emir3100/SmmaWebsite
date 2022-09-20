@@ -115,6 +115,17 @@
   }
 }
 
+@media (min-width: 960px)
+{
+  .grid-item-md-2{
+    flex-grow: 0;
+    max-width: 16.666667%;
+    flex-basis: 16.666667%;
+  }
+}
+
+
+
 .grid-item-xs-12 {
   flex-grow: 0;
   max-width: 100%;
@@ -614,5 +625,114 @@
 @media (max-width: 697px){
   .calendly-inline-widget{
     margin-top: 5rem;
+  }
+}
+
+/* footer */
+footer{
+  position: relative;
+  height: 250px;
+  width: 100%;
+  background-color: var(--dark);
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: inherit;
+}
+
+.footer p, .footer a {
+  color: var(--text-dark-bg);
+  font-size: clamp(0.95rem, 2vw, 1rem);
+  line-height: 1.5rem;
+  margin-top: 1rem;
+  text-decoration: none;
+}
+
+.footer a:hover{
+  text-decoration: underline;
+}
+
+.footer-column h4{
+  color: var(--white);
+  font-weight: bold;
+  font-size: clamp(1rem, 2vw, 1.2rem);
+}
+
+.footer-mobile{
+  display: none;
+  visibility: hidden;
+}
+
+.accordion {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  font-size: 1rem;
+  cursor: pointer;
+  padding-block: 1rem;
+  width: 95%;
+  text-align: left;
+  border-bottom: 1px solid white;
+  border-inline: none;
+  border-top: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+.accordion::focus, .accordion::active{
+  color: inherit !important;
+  background-color: inherit !important;
+}
+
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 1rem;
+  background-color: rgb(0, 0, 0);
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  width: inherit;
+  display: flex;
+  flex-direction: column;
+}
+
+.panel a{
+  padding: 0.5rem 2rem;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.accordion:after {
+  content: '\02795';
+  font-size: 13px;
+  filter: invert(100%) sepia(100%) saturate(1%) hue-rotate(99deg) brightness(112%) contrast(101%);
+  float: right;
+  margin-left: 5px;
+}
+
+.accordion .active:after {
+  content: "\2796";
+}
+
+@media (max-width:960px) {
+  .footer{
+      display: none;
+      visibility: hidden;
+  }
+
+  .footer-mobile{
+      visibility: visible;
+      display: flex;
+      justify-content: space-around;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      margin-bottom: 1rem;
   }
 }
