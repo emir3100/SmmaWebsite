@@ -304,8 +304,43 @@
   margin-top: 5rem;
 }
 
+/* General */
+.section-title{
+  color: var(--primary);
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 24px;
+}
+
+.section-destitle{
+  font-size: clamp(1.8rem, 5vw, 3.5rem);
+  font-weight: 600;
+}
+
+.section-p{
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  line-height: clamp(1.5rem, 3vw, 2.2rem);
+}
+
 /* Our Philosophy */
 .our-philosophy{
-  background-color: var(--white);
   min-height: 100vh !important;
+}
+
+.our-philosophy .section-title, .our-philosophy .section-destitle, .our-philosophy .section-p{
+  text-align: center;
+}
+
+.our-philosophy .section-p{
+  color: var(--text-light-bg);
+  padding-top: 1rem;
+}
+
+/* what-we-offer */
+.what-we-offer{
+  min-height: 100vh !important;
+}
+
+.what-we-offer .section-title, .what-we-offer .section-destitle{
+  text-align: center;
 }
