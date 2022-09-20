@@ -71,6 +71,56 @@
     }
 }
 
+/* grid */
+.grid {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+.grid-spacing-xs-2 {
+  width: calc(100% + 16px);
+  margin: -8px;
+}
+
+.grid-spacing-xs-2 > .grid-item {
+  padding: 8px;
+}
+
+.justify-space-between {
+  justify-content: space-between !important;
+}
+
+.grid-item{
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+@media (min-width: 600px)
+{
+  .grid-item-sm-4 {
+    flex-grow: 0;
+    max-width: 33.3333%;
+    flex-basis: 33.3333%;
+  }
+}
+
+@media (min-width: 960px)
+{
+  .grid-item-md-4{
+      flex-grow: 0;
+      max-width: 33.3333%;
+      flex-basis: 33.3333%;
+  }
+}
+.mud-grid-item-xs-12 {
+  flex-grow: 0;
+  max-width: 100%;
+  flex-basis: 100%;
+}
+
+
 /* Button */
 .button {
   background-color: var(--primary);
@@ -343,4 +393,78 @@
 
 .what-we-offer .section-title, .what-we-offer .section-destitle{
   text-align: center;
+}
+
+.card{
+  height:400px;
+  width:350px;
+  background-color: var(--dark);
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.card-header{
+  padding: 1rem;
+  background-color: var(--primary-light);
+  border-radius: 0.5rem;
+  width: 76px;
+  height: 76px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card h4{
+  color: var(--white);
+  font-size: clamp(1.6rem, 5vw, 2rem);
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+.card p{
+  color: var(--text-dark-bg);
+  font-size: clamp(0.95rem, 2vw, 1rem);
+  line-height: 1.5rem;
+  margin-top: 1rem;
+}
+
+.card-grid{
+  margin-top: 5rem;
+  justify-content: space-between;
+}
+
+.card-root-1{
+  display:flex; justify-content: start;
+}
+
+.card-root-2{
+  display:flex; justify-content: center;
+}
+
+.card-root-3{
+  display:flex; justify-content: end;
+}
+
+@media (max-width: 764px){
+  .card-root-1, .card-root-2, .card-root-3{
+    justify-content: center;
+    width: 100%;
+  }
+
+  .card-grid{
+    justify-content: center !important;
+  }
+}
+
+@media (max-width: 960px){
+  .card-root-1, .card-root-2, .card-root-3{
+    justify-content: center;
+    width: 100%;
+  }
+
+  .card-root-1 .card, .card-root-2 .card, .card-root-3 .card{
+    width: 100%;
+  }
 }
