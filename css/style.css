@@ -749,3 +749,27 @@ footer{
     margin-block: 1.25rem;
   }
 }
+
+/* About Page */
+.about{
+  padding-top: var(--navbar-height);
+  background-color: var(--dark);
+  min-height: calc(100vh - var(--navbar-height));
+  position: relative;
+}
+
+.about h1{
+  color: var(--white);
+  text-align: center;
+  font-size: clamp(1.8rem, 5vw, 3.5rem);
+  font-weight: 600;
+  margin-top: 5rem;
+}
+
+.about p{
+  text-align: center;
+  color: var(--text-dark-bg);
+  padding-top: 1.5rem;
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  line-height: clamp(1.5rem, 3vw, 2.2rem);
+}
