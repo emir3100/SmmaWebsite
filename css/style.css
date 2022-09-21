@@ -71,6 +71,14 @@
     }
 }
 
+@media (min-width: 960px)
+{
+  .container-maxwidth-md {
+      max-width: 960px;
+  }
+}
+
+
 /* grid */
 .grid {
   width: 100%;
@@ -86,6 +94,24 @@
 
 .grid-spacing-xs-2 > .grid-item {
   padding: 8px;
+}
+
+.grid-spacing-xs-4 {
+  width: calc(100% + 32px);
+  margin: -16px;
+}
+
+.grid-spacing-xs-4>.grid-item {
+  padding: 16px;
+}
+
+.grid-spacing-xs-8 {
+  width: calc(100% + 64px);
+  margin: -32px;
+}
+
+.grid-spacing-xs-8 > .grid-item {
+  padding: 32px;
 }
 
 .justify-space-between {
@@ -123,8 +149,6 @@
     flex-basis: 16.666667%;
   }
 }
-
-
 
 .grid-item-xs-12 {
   flex-grow: 0;
@@ -843,7 +867,7 @@ footer{
   position: relative;
   border-radius: 30px;
   padding: 2rem;
-  transition: 0.3s ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
 
 .post::before{
@@ -860,10 +884,95 @@ footer{
   border-radius: 30px;
 }
 
+.post:hover{
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.post:hover h3{
+  transform: scale(1.1);
+}
+
 .post h3{
   color: var(--white);
   text-align: center;
   font-size: clamp(1.6rem, 5vw, 3rem);
   font-weight: 600;
   z-index: 1;
+  transition: all 0.1s ease-in-out;
+}
+
+/* Blog Post Page */
+.blog-post{
+  padding-top: var(--navbar-height);
+  background-color: var(--dark);
+  min-height: calc(80vh - var(--navbar-height));
+  position: relative;
+}
+
+.blog-post::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 250px;
+  background-color: #ffffff;
+  width: 100%;
+}
+
+.blog-post h1{
+  color: var(--white);
+  text-align: center;
+  font-size: clamp(1.8rem, 5vw, 3.5rem);
+  font-weight: 600;
+  margin-top: 5rem;
+  position: relative;
+}
+
+.blog-post .post-image{
+  width: 100%;
+  height: 500px;
+  margin-top: 3rem;
+}
+
+.blog-post .post-image img{
+  width: inherit;
+  height: inherit;
+  object-position: center;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.post-content{
+  padding-bottom: 4rem;
+}
+
+.info{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+}
+
+.info p{
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 2;
+}
+
+.content{
+  margin-top: 1rem;
+}
+
+.content p{
+  color: var(--text-light-bg);
+  font-size: clamp(0.95rem, 2vw, 1rem);
+  line-height: 1.5rem;
+  margin-top: 1rem;
+}
+
+.content h2{
+  color: black;
+  font-size: clamp(1.5rem, 2vw, 2rem);
+  line-height: 1.5rem;
+  margin-top: 2rem;
+  font-weight: 600;
 }
