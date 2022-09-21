@@ -373,6 +373,13 @@
   margin-top: 5rem;
 }
 
+@media (max-width: 960px){
+  .hero button{
+    margin-top: 3rem !important;
+    padding: 10px 36px !important;
+    font-size: 16px !important;
+  }
+}
 /* General */
 .section-title{
   color: var(--primary);
