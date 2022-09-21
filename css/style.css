@@ -714,7 +714,7 @@ footer{
   margin-left: 5px;
 }
 
-.accordion .active:after {
+.accordion.active:after {
   content: "\2796";
 }
 
