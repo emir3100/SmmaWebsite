@@ -773,3 +773,51 @@ footer{
   font-size: clamp(1rem, 2vw, 1.5rem);
   line-height: clamp(1.5rem, 3vw, 2.2rem);
 }
+
+/* Blog Page */
+.blog{
+  padding-top: var(--navbar-height);
+  background-color: var(--dark);
+  min-height: calc(100vh - var(--navbar-height));
+  position: relative;
+}
+
+.blog h1{
+  color: var(--white);
+  text-align: center;
+  font-size: clamp(1.8rem, 5vw, 3.5rem);
+  font-weight: 600;
+  margin-top: 5rem;
+}
+
+.blog form {
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+}
+
+.blog input {
+  position: relative;
+  display: inline-block;
+}
+
+.blog input[type=text] {
+  width: 83%;
+  box-sizing: border-box;
+  font-size: 16px;
+  background-color: white;
+  background-image: url('../images/search-icon.svg');          
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  background-size: 1.5rem;
+  border-radius: 15px;
+  border: none;
+}
+
+.blog input[type=text]:focus{
+  outline: none !important;
+  border: none;
+  transform: scale(1);
+  transition: 0.15s;
+}
