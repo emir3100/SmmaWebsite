@@ -219,6 +219,14 @@
   overflow: hidden;
 }
 
+@media (max-width: 360px){
+  .navbar-container a{
+    transform: scale(0.6);
+    transform-origin: left;
+    width: 150px;
+  }
+}
+
 .menu{
   display: flex;
   flex-direction: row;
@@ -328,7 +336,8 @@
 .hero{
   padding-top: var(--navbar-height);
   background-color: var(--dark);
-  min-height: calc(120vh - var(--navbar-height));
+  max-height: 1600px;
+  min-height: 950px;
   position: relative;
 }
 
@@ -424,7 +433,8 @@
 
 /* Our Philosophy */
 .our-philosophy{
-  min-height: 100vh !important;
+  max-height: 1600px;
+  min-height: 950px;
 }
 
 .our-philosophy .section-title, .our-philosophy .section-destitle, .our-philosophy .section-p{
@@ -438,7 +448,8 @@
 
 /* what-we-offer */
 .what-we-offer{
-  min-height: 100vh !important;
+  max-height: 1600px;
+  min-height: 950px;
 }
 
 .what-we-offer .section-title, .what-we-offer .section-destitle{
@@ -521,7 +532,8 @@
 
 /* How We Work */
 .how-we-work{
-  min-height: 100vh !important;
+  max-height: 1600px;
+  min-height: 950px;
 }
 
 .how-we-work .section-title, .how-we-work .section-destitle{
@@ -635,7 +647,8 @@
 
 /* Let’s Talk */
 .lets-talk{
-  min-height: 100vh !important;
+  max-height: 1600px;
+  min-height: 950px;
 }
 
 .lets-talk .section-title, .lets-talk .section-destitle{
@@ -778,7 +791,8 @@ footer{
 .about{
   padding-top: var(--navbar-height);
   background-color: var(--dark);
-  min-height: calc(100vh - var(--navbar-height));
+  max-height: 1600px;
+  min-height: 950px;
   position: relative;
 }
 
@@ -802,7 +816,8 @@ footer{
 .blog{
   padding-top: var(--navbar-height);
   background-color: var(--dark);
-  min-height: calc(80vh - var(--navbar-height));
+  max-height: 1600px;
+  min-height: 950px;
   position: relative;
 }
 
@@ -847,7 +862,8 @@ footer{
 }
 
 .posts{
-  min-height: 100vh !important;
+  max-height: 1600px;
+  min-height: 950px;
 }
 
 .post-root{
@@ -905,7 +921,8 @@ footer{
 .blog-post{
   padding-top: var(--navbar-height);
   background-color: var(--dark);
-  min-height: calc(80vh - var(--navbar-height));
+  max-height: 1600px;
+  min-height: 950px;
   position: relative;
 }
 
