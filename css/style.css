@@ -816,8 +816,8 @@ footer{
 .blog{
   padding-top: var(--navbar-height);
   background-color: var(--dark);
-  max-height: 1600px;
-  min-height: 950px;
+  max-height: 900px;
+  min-height: 550px;
   position: relative;
 }
 
@@ -992,4 +992,39 @@ footer{
   line-height: 1.5rem;
   margin-top: 2rem;
   font-weight: 600;
+}
+
+/* Policy */
+.policy{
+  padding-top: var(--navbar-height);
+  background-color: var(--dark);
+  max-height: 1600px;
+  min-height: 950px;
+  position: relative;
+  padding-bottom: 4rem;
+}
+
+.policy h1{
+  color: var(--white);
+  text-align: start;
+  font-size: clamp(1.8rem, 5vw, 3.5rem);
+  font-weight: 600;
+  margin-top: 5rem;
+}
+
+.policy h2{
+  color: var(--white);
+  font-size: clamp(1.5rem, 2vw, 2rem);
+  line-height: 1.5rem;
+  margin-top: 2rem;
+  font-weight: 600;
+}
+
+.policy p{
+  text-align: start;
+  color: var(--text-dark-bg);
+  padding-top: 1.5rem;
+  font-size: clamp(0.95rem, 2vw, 1rem);
+  line-height: 1.5rem;
+  margin-top: 1rem;
 }
