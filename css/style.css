@@ -861,8 +861,11 @@ footer{
   transition: 0.15s;
 }
 
+.hide {
+  display: none;
+}
+
 .posts{
-  max-height: 1600px;
   min-height: 950px;
 }
 
