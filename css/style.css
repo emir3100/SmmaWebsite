@@ -998,7 +998,6 @@ footer{
 .policy{
   padding-top: var(--navbar-height);
   background-color: var(--dark);
-  max-height: 1600px;
   min-height: 950px;
   position: relative;
   padding-bottom: 4rem;
@@ -1020,13 +1019,31 @@ footer{
   font-weight: 600;
 }
 
+.policy h3{
+  color: var(--text-dark-bg);
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  line-height: 1rem;
+  margin-top: 2rem;
+  font-weight: 600;
+}
+
 .policy p{
   text-align: start;
   color: var(--text-dark-bg);
   padding-top: 1.5rem;
   font-size: clamp(0.95rem, 2vw, 1rem);
   line-height: 1.5rem;
+}
+
+.policy ul{
+  padding-left: 2rem;
   margin-top: 1rem;
+}
+
+.policy ul li{
+  color: var(--text-dark-bg);
+  font-size: clamp(0.95rem, 2vw, 1rem);
+  line-height: 1.5rem;
 }
 
 /* Missing */
