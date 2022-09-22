@@ -1054,3 +1054,24 @@ footer{
   margin-top: 2rem;
   font-weight: 600;
 }
+
+.missing a{
+  display: block;
+  margin: 0 auto;
+  margin-top: 5rem;
+  width: 240px;
+}
+
+@media (max-width: 960px){
+  .missing a{
+    margin-top: 3rem !important;
+    padding: 10px 36px !important;
+    font-size: 16px !important;
+  }
+}
+
+@media (max-width: 600px){
+  .missing a{
+    width: 100%;
+  }
+}
