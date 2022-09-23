@@ -924,8 +924,6 @@ footer{
 .blog-post{
   padding-top: var(--navbar-height);
   background-color: var(--dark);
-  max-height: 1600px;
-  min-height: 950px;
   position: relative;
 }
 
