@@ -24,7 +24,7 @@
     <meta name="twitter:title" content="Scale Your Business To 7 & 8 Figures Through Paid And Organic Traffic">
     <meta name="twitter:description" content="We Help Businesses Scale To 7 & 8 Figures Through Paid And Organic Traffic">
     <meta name="twitter:image" content="https://www.luxgrowth.io/images/share.png">
-
+    
     <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
@@ -240,8 +240,8 @@
                 <h2 class="section-title">Let’s Talk</h2>
                 <h3 class="section-destitle">Let’s schedule a meeting!</h3>
                 <!-- Calendly inline widget begin -->
-                <div class="calendly-inline-widget" data-url="https://calendly.com/luxgrowth/15min?hide_gdpr_banner=1&text_color=151515&primary_color=1d34ed"></div>
-                <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" defer></script>
+                <div class="calendly-inline-widget"  did="calendly"></div>
+                <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
                 <!-- Calendly inline widget end -->
             </div>
         </section>
@@ -347,6 +347,14 @@
         </div>
     </footer>
     <script>
+
+        Calendly.initInlineWidget({
+            url: 'https://calendly.com/luxgrowth/15min?hide_gdpr_banner=1&text_color=151515&primary_color=1d34ed',
+            parentElement: document.getElementById('calendly'),
+            prefill: {},
+            utm: {}
+        });
+
         var acc = document.getElementsByClassName("accordion");
         var i;
 
