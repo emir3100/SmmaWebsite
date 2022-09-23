@@ -978,18 +978,18 @@ footer{
   line-height: 2;
 }
 
-.content{
+.post-content .content{
   margin-top: 1rem;
 }
 
-.content p{
+.post-content .content p{
   color: var(--text-light-bg);
   font-size: clamp(0.95rem, 2vw, 1rem);
   line-height: 1.5rem;
   margin-top: 1rem;
 }
 
-.content h2{
+.post-content .content h2{
   color: black;
   font-size: clamp(1.5rem, 2vw, 2rem);
   line-height: 1.5rem;
