@@ -829,7 +829,7 @@ footer{
   margin-top: 5rem;
 }
 
-.blog form {
+.blog .form {
   display: flex;
   justify-content: center;
   margin-top: 5rem;
