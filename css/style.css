@@ -78,6 +78,27 @@
   }
 }
 
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 5px solid #e4e4e4;
+  border-bottom-color: var(--primary);
+  border-radius: 50%;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+  margin: 0 auto;
+  display: block;
+  margin-top: 10rem;
+}
+
+@keyframes rotation {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+} 
 
 /* grid */
 .grid {
