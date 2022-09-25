@@ -374,6 +374,12 @@
   position: relative;
 }
 
+@media (max-width: 960px){
+  .hero-img{
+    -webkit-mask-image: -webkit-gradient(linear, left top, left 40%, from(rgb(0 0 0 / 20%)), to(rgb(255 255 255)));
+  }
+}
+
 @media (max-width: 365px){
   .hero-img{
     -webkit-mask-image: none !important;
