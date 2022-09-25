@@ -19,6 +19,7 @@
   font-family: 'intern','Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
+  scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar {
@@ -362,7 +363,7 @@
   padding-top: var(--navbar-height);
   background-color: var(--dark);
   max-height: 1600px;
-  min-height: 950px;
+  min-height: 860px;
   position: relative;
 }
 
@@ -424,19 +425,27 @@
   font-weight: 600;
 }
 
-.hero button{
+.hero a{
   display: block;
   margin: 0 auto;
   margin-top: 5rem;
+  width: 200px;
 }
 
 @media (max-width: 960px){
-  .hero button{
+  .hero a{
     margin-top: 3rem !important;
     padding: 10px 36px !important;
     font-size: 16px !important;
   }
 }
+
+@media (max-width: 360px){
+  .hero a{
+    width: 100%;
+  }
+}
+
 /* General */
 .section-title{
   color: var(--primary);
@@ -458,7 +467,7 @@
 /* Our Philosophy */
 .our-philosophy{
   max-height: 1600px;
-  min-height: 950px;
+  min-height: 860px;
 }
 
 .our-philosophy .section-title, .our-philosophy .section-destitle, .our-philosophy .section-p{
@@ -473,7 +482,7 @@
 /* what-we-offer */
 .what-we-offer{
   max-height: 1600px;
-  min-height: 950px;
+  min-height: 860px;
 }
 
 .what-we-offer .section-title, .what-we-offer .section-destitle{
@@ -557,7 +566,7 @@
 /* How We Work */
 .how-we-work{
   max-height: 1600px;
-  min-height: 950px;
+  min-height: 860px;
 }
 
 .how-we-work .section-title, .how-we-work .section-destitle{
@@ -680,7 +689,7 @@
 /* Let’s Talk */
 .lets-talk{
   max-height: 1600px;
-  min-height: 950px;
+  min-height: 860px;
 }
 
 .lets-talk .section-title, .lets-talk .section-destitle{
@@ -824,7 +833,7 @@ footer{
   padding-top: var(--navbar-height);
   background-color: var(--dark);
   max-height: 1600px;
-  min-height: 950px;
+  min-height: 860px;
   position: relative;
 }
 
@@ -898,7 +907,7 @@ footer{
 }
 
 .posts{
-  min-height: 950px;
+  min-height: 860px;
 }
 
 .post-root{
@@ -1107,7 +1116,7 @@ footer{
 .policy{
   padding-top: var(--navbar-height);
   background-color: var(--dark);
-  min-height: 950px;
+  min-height: 860px;
   position: relative;
   padding-bottom: 4rem;
 }
@@ -1160,7 +1169,7 @@ footer{
   padding-top: var(--navbar-height);
   background-color: var(--dark);
   max-height: 1600px;
-  min-height: 950px;
+  min-height: 860px;
   position: relative;
 }
 
@@ -1207,7 +1216,7 @@ footer{
   padding-top: var(--navbar-height);
   background-color: var(--dark);
   max-height: 1600px;
-  min-height: 950px;
+  min-height: 860px;
   position: relative;
 }
 
