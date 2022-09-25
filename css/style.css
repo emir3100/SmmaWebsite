@@ -246,7 +246,7 @@
 }
 
 @media (max-width: 360px){
-  .navbar-container a{
+  .navbar-container .logo{
     transform: scale(0.6);
     transform-origin: left;
     width: 150px;
@@ -301,6 +301,7 @@
       left: 0;
       height: calc(100vh - 60px);
       justify-content: center;
+      padding-bottom: 10rem;
   }
 
   .menu.drawer li {
