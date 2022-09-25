@@ -374,6 +374,26 @@
   position: relative;
 }
 
+@media (max-width: 365px){
+  .hero-img{
+    -webkit-mask-image: none !important;
+  }
+}
+
+@media (max-width: 300px){
+  .hero-img{
+    display: none;
+  }
+
+  .hero::before{
+    content: none !important;
+  }
+
+  .our-philosophy{
+    padding-top: 2rem;
+  }
+}
+
 @media (max-width: 300px){
   .hero{
     min-height: calc(clamp(60vh, 5vw, 100vh) - var(--navbar-height)) !important;
@@ -386,7 +406,7 @@
   }
 
   .hero::before{
-    height: 120px !important;
+    height: 125px !important;
   }
 }
 
@@ -435,7 +455,7 @@
 
 @media (max-width: 960px){
   .hero a{
-    margin-top: 3rem !important;
+    margin-block: 3rem !important;
     padding: 10px 36px !important;
     font-size: 16px !important;
   }
