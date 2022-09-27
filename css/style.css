@@ -1081,7 +1081,7 @@ footer{
   margin-top: 3rem;
 }
 
-.post-newsletter h1{
+.post-newsletter h2{
   color: black;
   text-align: center;
   font-size: clamp(1.8rem, 5vw, 3.5rem);
