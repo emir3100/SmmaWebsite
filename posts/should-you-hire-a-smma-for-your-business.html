@@ -87,10 +87,14 @@
                         <div class="post-newsletter">
                             <h1>Weekly Knowledge</h1>
                             <p>Subscribe to our newsletter</p>
-                            <form>
-                                <input type="text" placeholder="Name">
-                                <input type="email" placeholder="Email">
-                                <button class="button">Subscribe Now</button>
+                            <form action="https://luxgrowth.us17.list-manage.com/subscribe/post?u=a8b6c5571d4bc7fac4f0af7c9&amp;id=147b5ecc73&amp;f_id=00474be0f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank">
+                                <input type="text" value="" name="FNAME" id="mce-FNAME" placeholder="Name" required minlength="1" />
+                                <input type="email" type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" />
+                                <div id="mce-responses">
+                                    <div class="response" id="mce-error-response" style="display:none"></div>
+                                    <div class="response" id="mce-success-response" style="display:none"></div>
+                                </div> 
+                                <input type="submit" value="Subscribe Now" name="subscribe" id="mc-embedded-subscribe" class="button" />
                             </form>
                         </div>
                     </div>
@@ -198,8 +202,24 @@
             </div>
         </div>
     </footer>
-
+    <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+    <script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[1]='FNAME';ftypes[1]='text';fnames[0]='EMAIL';ftypes[0]='email';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
     <script>
+        const name = document.getElementById('mce-FNAME');
+        const email = document.getElementById('mce-EMAIL');
+        const button = document.getElementById('mc-embedded-subscribe');
+        var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+
+        button.onclick = function () {
+            if(name.value === '' || email.value === '' || !email.value.match(mailformat)){
+                alert("Name or Email are invalid");
+                return false;
+            }
+            else{
+                true;
+            }
+        }
+
         var acc = document.getElementsByClassName("accordion");
         var i;
 

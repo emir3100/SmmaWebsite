@@ -1020,6 +1020,18 @@ footer{
   margin-top: 3rem;
 }
 
+@media (max-width: 960px){
+  .blog-post .post-image{
+    height: 400px;
+  }
+}
+
+@media (max-width: 600px){
+  .blog-post .post-image{
+    height: 360px;
+  }
+}
+
 .blog-post .post-image img{
   width: inherit;
   height: inherit;
@@ -1119,22 +1131,21 @@ footer{
   transition: 0.15s;
 }
 
-.post-newsletter button{
+.post-newsletter .button{
   display: block;
   margin: 0 auto;
-  margin-top: 3rem;
   width: 240px;
 }
 
 @media (max-width: 960px){
-  .post-newsletter button{
+  .post-newsletter .button{
     padding: 10px 36px !important;
     font-size: 16px !important;
   }
 }
 
 @media (max-width: 600px){
-  .post-newsletter button, .post-newsletter input[type=text], .post-newsletter input[type=email]{
+  .post-newsletter .button, .post-newsletter input[type=text], .post-newsletter input[type=email]{
     width: 100%;
   }
 }
@@ -1317,4 +1328,19 @@ footer{
   .newsletter .button, .newsletter input[type=text], .newsletter input[type=email]{
     width: 100%;
   }
+}
+
+.response{
+  font-weight: 700;
+  font-size: clamp(0.95rem, 2vw, 1rem);
+  line-height: 1.5rem;
+  text-align: center;
+}
+
+.newsletter .response{
+  color: white;
+}
+
+.post-newsletter .response{
+  color: black;
 }
