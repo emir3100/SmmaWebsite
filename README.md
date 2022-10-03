@@ -1,5 +1,5 @@
 # SmmaWebsite
-This is a responsive website for social media marketing agency. Website is live [here.](https://www.luxgrowth.io)
+This is a responsive website for social media marketing agency. Website is live [here.](https://www.luxgrowth.io) and hosted with Netlify
 
 What is included in the website:
 - Landing Page, using calendly for booking calls
