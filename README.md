@@ -1,3 +1,11 @@
 # SmmaWebsite
-This is a example website for social media marketing agency
-<img src="https://cdn.discordapp.com/attachments/845301058016116756/1026566764252893304/unknown.png" />
+This is a responsive website for social media marketing agency
+
+What is included in the website:
+- Landing Page, using calendly for booking calls
+- About Page
+- Blog Page
+- Policies Page
+- Newsletter, using mailchimp
+
+![website image](image.jpg)
